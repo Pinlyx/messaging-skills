@@ -18,7 +18,8 @@ A lead list from open data is cheap to build and easy to misuse. The useful part
 
 ## Tools
 
-- Open data sources: OpenStreetMap (query with Overpass or a regional extract) and Overture Maps places. A purpose-built open source tool, `Pinlyx/open-business-finder`, is planned (coming soon); until it is released, use the sources directly.
+- [open-business-finder](https://github.com/Pinlyx/open-business-finder) for the list itself: it queries Overture Maps places by country, region, district and category, with no API key. Run it without installing: `uvx --from git+https://github.com/Pinlyx/open-business-finder obf --help`.
+- OpenStreetMap (Overpass or a regional extract) as a second source when a category is better mapped there.
 - [contact-channel-detector](https://github.com/Pinlyx/contact-channel-detector) to read each website's channels: `pip install git+https://github.com/Pinlyx/contact-channel-detector`.
 - `can-i-message` and `broadcast-compliance` for the outreach step.
 
@@ -33,6 +34,20 @@ A lead list from open data is cheap to build and easy to misuse. The useful part
 ## Workflow
 
 ### 1. Define the query
+
+With open-business-finder, find the exact names first, then search:
+
+```
+obf regions --country DE                      # region names
+obf regions --country DE --level county --parent Berlin
+obf categories dental                         # exact category names, e.g. dental_clinic
+obf search --country DE --region Berlin --category dental_clinic --has-website --format csv --out leads.csv
+obf enrich leads.csv --out enriched.csv       # adds the website's contact channels
+```
+
+Use `--bbox` or `--near lat,lon --radius-km N` for small areas; a smaller area answers faster.
+
+For OpenStreetMap instead:
 
 - Translate the category into data tags. OpenStreetMap examples: `amenity=restaurant`, `amenity=dentist`, `shop=bakery`, `leisure=fitness_centre`. Check the tag in the OSM wiki; local tagging varies.
 - Fix the area by boundary or bounding box. Avoid querying the whole country when you need a city.

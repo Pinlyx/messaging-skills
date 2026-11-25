@@ -114,8 +114,8 @@ The skills name these tools as optional helpers. None of them is required.
 | [`dm-bench`](https://github.com/Pinlyx/dm-bench) | 70 scenarios that benchmark an AI agent answering customer DMs | `ai-dm-agent-prompt` |
 | [`telegram-channel-stats`](https://github.com/Pinlyx/telegram-channel-stats) | Subscribers, views, reach and posting frequency of any public Telegram channel | `telegram-channel-growth` |
 | [`contact-channel-detector`](https://github.com/Pinlyx/contact-channel-detector) | Detects the contact channels a website offers | `contact-channel-audit`, `local-lead-list` |
-| `Pinlyx/messaging-mcp` (coming soon) | Self-hosted MCP server for messaging through the official APIs | Planned |
-| `Pinlyx/open-business-finder` (coming soon) | Business lists from open map data | `local-lead-list` |
+| [`messaging-mcp`](https://github.com/Pinlyx/messaging-mcp) (npm) | Self-hosted MCP server for messaging through the official APIs | `can-i-message`, `dm-reply-writer`, `inbox-triage` |
+| [`open-business-finder`](https://github.com/Pinlyx/open-business-finder) | Business lists from open map data | `local-lead-list` |
 
 ## How a skill is built
 

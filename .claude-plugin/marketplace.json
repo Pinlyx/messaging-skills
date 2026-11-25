@@ -1,0 +1,17 @@
+{
+  "name": "messaging-skills",
+  "description": "Agent skills for business messaging on WhatsApp, Instagram, Messenger, Telegram and X.",
+  "owner": {
+    "name": "Pinlyx",
+    "url": "https://pinlyx.com"
+  },
+  "plugins": [
+    {
+      "name": "messaging-skills",
+      "source": "./",
+      "description": "Fifteen skills for customer messaging: WhatsApp templates, messaging windows, Instagram DM automation, comment to DM funnels, AI DM agent prompts, broadcast compliance, webhooks, Telegram bots and channels, inbox triage, macros and KPIs.",
+      "category": "productivity",
+      "keywords": ["whatsapp", "instagram", "messenger", "telegram", "customer-support", "chatbot", "messaging"]
+    }
+  ]
+}

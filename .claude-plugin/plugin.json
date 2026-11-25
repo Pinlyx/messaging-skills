@@ -1,0 +1,23 @@
+{
+  "name": "messaging-skills",
+  "version": "0.1.0",
+  "description": "Fifteen agent skills for business messaging on WhatsApp, Instagram, Messenger, Telegram and X, built on source-cited platform rules.",
+  "author": {
+    "name": "Pinlyx",
+    "url": "https://pinlyx.com"
+  },
+  "homepage": "https://github.com/Pinlyx/messaging-skills",
+  "repository": "https://github.com/Pinlyx/messaging-skills",
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "instagram",
+    "messenger",
+    "telegram",
+    "x",
+    "customer-support",
+    "chatbot",
+    "messaging",
+    "skills"
+  ]
+}

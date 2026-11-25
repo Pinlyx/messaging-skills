@@ -1,0 +1,6 @@
+{
+  "name": "messaging-skills",
+  "version": "0.1.0",
+  "description": "Fifteen skills for business messaging on WhatsApp, Instagram, Messenger, Telegram and X, built on source-cited platform rules.",
+  "contextFileName": "GEMINI.md"
+}

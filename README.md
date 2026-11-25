@@ -1,5 +1,9 @@
 # messaging-skills
 
+[![CI](https://github.com/Pinlyx/messaging-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/Pinlyx/messaging-skills/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Skills](https://img.shields.io/badge/skills-15-0ea5e9)](skills)
+
+![messaging-skills](docs/images/messaging-skills-social-preview.png)
+
 **Fifteen agent skills that teach your AI assistant how to message customers on WhatsApp, Instagram, Messenger, Telegram and X without breaking the platform rules.**
 
 Works with Claude Code, Codex, Gemini CLI, Cursor and any agent that reads the Agent Skills format (a folder with a `SKILL.md`).
